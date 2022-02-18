@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "245114004850",
+    "project_id": "vocalforlocal-49540",
+    "storage_bucket": "vocalforlocal-49540.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245114004850:android:b06756ec93f990befae9eb",
+        "android_client_info": {
+          "package_name": "com.example.android.vocalforlocal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "245114004850-ih73b99i8dmrciepjquppgaj3e5idqn7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.vocalforlocal",
+            "certificate_hash": "8171808abfa656cb6976c73feaf4d6984ec108a4"
+          }
+        },
+        {
+          "client_id": "245114004850-ggmh9lckmir9ooscenerjnaksfkolh50.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANVyvu-ogKHJxgA6udHtaTv-04gbvDfR8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "245114004850-ggmh9lckmir9ooscenerjnaksfkolh50.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
