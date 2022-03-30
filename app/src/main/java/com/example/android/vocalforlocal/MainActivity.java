@@ -84,12 +84,14 @@ public class MainActivity extends AppCompatActivity {
                             Toast.makeText(MainActivity.this, "Please wait, You are already logged in...", Toast.LENGTH_SHORT).show();
                             loadingBar.dismiss();
                             Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+                            Prevalent.currentOnlineUser = usersData;
                             startActivity(intent);
 
 
                         }
                         else{
                             Toast.makeText(MainActivity.this, "Please enter correct password", Toast.LENGTH_SHORT).show();
+
                             loadingBar.dismiss();
                         }
                     }
