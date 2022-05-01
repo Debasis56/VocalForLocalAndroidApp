@@ -72,6 +72,18 @@
 <!--        android:elevation="6dp"-->
 <!--        android:src="@drawable/nav_cart"-->
 <!--        app:backgroundTint="@color/white" />-->
+    <Button
+        android:id="@+id/pd_add_to_cart_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:layout_margin="15dp"
+        android:layout_alignParentBottom="true"
+        android:text="Add to Cart"
+        android:textColor="@color/white"
+        android:textSize="18sp">
+
+    </Button>
 
 
 </RelativeLayout>
