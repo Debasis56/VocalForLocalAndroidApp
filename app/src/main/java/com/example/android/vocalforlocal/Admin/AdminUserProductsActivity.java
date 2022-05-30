@@ -1,4 +1,4 @@
-package com.example.android.vocalforlocal;
+package com.example.android.vocalforlocal.Admin;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.android.vocalforlocal.Model.Cart;
+import com.example.android.vocalforlocal.R;
 import com.example.android.vocalforlocal.ViewHolder.CartViewHolder;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;

@@ -13,6 +13,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.android.vocalforlocal.Admin.AdminCategoryActivity;
 import com.example.android.vocalforlocal.Model.Users;
 import com.example.android.vocalforlocal.Prevalent.Prevalent;
 import com.google.firebase.database.DataSnapshot;
@@ -30,11 +31,15 @@ private Button LoginButton;
 private ProgressDialog loadingBar;
 public String parentName = "Users";
 private CheckBox checkBoxRememberMe;
-private TextView AdminLink, NotAdminLink;
+private TextView AdminLink, NotAdminLink, ForgetPasswordLink;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        ForgetPasswordLink = (TextView) findViewById(R.id.forget_password_link);
        LoginButton = (Button)findViewById(R.id.login_btn);
 
         InputPassword = (EditText) findViewById(R.id.login_password_input);
@@ -71,6 +76,15 @@ private TextView AdminLink, NotAdminLink;
                 AdminLink.setVisibility(View.VISIBLE);
                 NotAdminLink.setVisibility(View.INVISIBLE);
                 parentName = "Users";
+            }
+        });
+
+        ForgetPasswordLink.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, ResetPasswordActivity.class);
+                intent.putExtra("check", "login");
+                startActivity(intent);
             }
         });
 

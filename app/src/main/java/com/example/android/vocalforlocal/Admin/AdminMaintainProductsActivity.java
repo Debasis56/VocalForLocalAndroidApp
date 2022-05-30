@@ -1,4 +1,4 @@
-package com.example.android.vocalforlocal;
+package com.example.android.vocalforlocal.Admin;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.example.android.vocalforlocal.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DataSnapshot;
@@ -61,6 +62,27 @@ public class AdminMaintainProductsActivity extends AppCompatActivity {
         deleteBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                deleteThisProduct();
+
+            }
+        });
+    }
+
+    private void deleteThisProduct() {
+        productsRef.removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task) {
+                if(task.isSuccessful())
+                {
+
+                    Intent intent = new Intent(AdminMaintainProductsActivity.this, AdminCategoryActivity.class);
+                    startActivity(intent);
+                    finish();
+                    Toast.makeText(AdminMaintainProductsActivity.this, "The product is deleted successfully.", Toast.LENGTH_SHORT).show();
+
+
+
+                }
 
             }
         });

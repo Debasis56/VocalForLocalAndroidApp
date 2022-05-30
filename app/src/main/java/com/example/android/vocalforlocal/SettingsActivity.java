@@ -10,6 +10,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -44,11 +45,13 @@ public class SettingsActivity extends AppCompatActivity {
     private StorageTask uploadTask;
     private StorageReference storageProfilePictureRef;
     private String checker = "";
+    private Button SecurityQuestionBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
+        SecurityQuestionBtn = findViewById(R.id.security_questions_btn);
 
         storageProfilePictureRef = FirebaseStorage.getInstance().getReference().child("Profile Pictures");
 
@@ -93,6 +96,17 @@ public class SettingsActivity extends AppCompatActivity {
                         .setAspectRatio(1,1)
                         .start(SettingsActivity.this);
 
+
+            }
+        });
+
+        SecurityQuestionBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(SettingsActivity.this, ResetPasswordActivity.class);
+                intent.putExtra("check", "settings");
+                startActivity(intent);
 
             }
         });

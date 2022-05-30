@@ -18,6 +18,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.android.vocalforlocal.Admin.AdminMaintainProductsActivity;
 import com.example.android.vocalforlocal.Model.Products;
 import com.example.android.vocalforlocal.Prevalent.Prevalent;
 import com.example.android.vocalforlocal.ViewHolder.ProductViewHolder;
@@ -25,7 +26,6 @@ import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.database.DatabaseReference;
 import com. google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
@@ -143,10 +143,6 @@ public class HomeActivity extends AppCompatActivity
                                     Intent intent = new Intent(HomeActivity.this, AdminMaintainProductsActivity.class);
                                     intent.putExtra("pid", model.getPid());
                                     startActivity(intent);
-
-
-
-
                                 }
                                 else {
 

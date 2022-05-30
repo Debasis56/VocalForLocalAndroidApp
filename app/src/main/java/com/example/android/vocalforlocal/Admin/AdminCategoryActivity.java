@@ -1,4 +1,4 @@
-package com.example.android.vocalforlocal;
+package com.example.android.vocalforlocal.Admin;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+
+import com.example.android.vocalforlocal.HomeActivity;
+import com.example.android.vocalforlocal.MainActivity;
+import com.example.android.vocalforlocal.R;
 
 public class AdminCategoryActivity extends AppCompatActivity {
 private ImageView bagsandwallets, broom, crafts, eatable, furnitures, handicrafts, handlooms, homeUtilities, jewelleryandhats, jutecrafts, kitchenanddining, officeutilities, terracotta, tribalpainting, woolenarts, stonecarvings;

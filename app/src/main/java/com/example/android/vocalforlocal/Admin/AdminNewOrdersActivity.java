@@ -1,4 +1,4 @@
-package com.example.android.vocalforlocal;
+package com.example.android.vocalforlocal.Admin;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -17,6 +17,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.android.vocalforlocal.Model.AdminOrders;
+import com.example.android.vocalforlocal.R;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.DatabaseReference;
