@@ -1,4 +1,4 @@
-package com.example.android.vocalforlocal;
+package com.example.android.vocalforlocal.Buyers;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,9 +13,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.android.vocalforlocal.Admin.AdminCategoryActivity;
+import com.example.android.vocalforlocal.Sellers.SellerProductCategoryActivity;
 import com.example.android.vocalforlocal.Model.Users;
 import com.example.android.vocalforlocal.Prevalent.Prevalent;
+import com.example.android.vocalforlocal.R;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -135,7 +136,7 @@ private TextView AdminLink, NotAdminLink, ForgetPasswordLink;
                            {
                                Toast.makeText(LoginActivity.this, "Welcome Admin!! You Are Logged in Successfully...", Toast.LENGTH_SHORT).show();
                                loadingBar.dismiss();
-                               Intent intent = new Intent(LoginActivity.this, AdminCategoryActivity.class);
+                               Intent intent = new Intent(LoginActivity.this, SellerProductCategoryActivity.class);
                                startActivity(intent);
                            }
                            else if(parentName.equals("Users"))

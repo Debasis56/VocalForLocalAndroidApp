@@ -1,4 +1,4 @@
-package com.example.android.vocalforlocal;
+package com.example.android.vocalforlocal.Buyers;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -21,6 +21,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.android.vocalforlocal.Admin.AdminMaintainProductsActivity;
 import com.example.android.vocalforlocal.Model.Products;
 import com.example.android.vocalforlocal.Prevalent.Prevalent;
+import com.example.android.vocalforlocal.R;
 import com.example.android.vocalforlocal.ViewHolder.ProductViewHolder;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
@@ -119,7 +120,7 @@ public class HomeActivity extends AppCompatActivity
 
         FirebaseRecyclerOptions<Products> options =
                 new FirebaseRecyclerOptions.Builder<Products>()
-                        .setQuery(ProductsRef, Products.class)
+                        .setQuery(ProductsRef.orderByChild("productStats").equalTo("Approved"), Products.class)
                         .build();
 
 

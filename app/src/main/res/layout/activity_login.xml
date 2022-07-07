@@ -7,7 +7,7 @@
     android:background="@drawable/shopping"
     android:backgroundTint="#80FFFFFF"
     android:backgroundTintMode="src_over"
-    tools:context=".LoginActivity">
+    tools:context=".Buyers.LoginActivity">
 
     <ImageView
         android:layout_width="300dp"
