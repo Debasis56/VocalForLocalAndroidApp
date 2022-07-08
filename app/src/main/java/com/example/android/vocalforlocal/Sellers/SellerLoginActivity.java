@@ -64,6 +64,7 @@ public class SellerLoginActivity extends AppCompatActivity {
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if(task.isSuccessful())
                             {
+                                loadingBar.dismiss();
                                 Log.info("dsad", "Registered Login");
                                 Intent intent = new Intent(SellerLoginActivity.this, SellerHomeActivity.class);
                                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);

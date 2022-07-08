@@ -13,6 +13,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.android.vocalforlocal.Admin.AdminHomeActivity;
 import com.example.android.vocalforlocal.Sellers.SellerProductCategoryActivity;
 import com.example.android.vocalforlocal.Model.Users;
 import com.example.android.vocalforlocal.Prevalent.Prevalent;
@@ -136,7 +137,7 @@ private TextView AdminLink, NotAdminLink, ForgetPasswordLink;
                            {
                                Toast.makeText(LoginActivity.this, "Welcome Admin!! You Are Logged in Successfully...", Toast.LENGTH_SHORT).show();
                                loadingBar.dismiss();
-                               Intent intent = new Intent(LoginActivity.this, SellerProductCategoryActivity.class);
+                               Intent intent = new Intent(LoginActivity.this, AdminHomeActivity.class);
                                startActivity(intent);
                            }
                            else if(parentName.equals("Users"))

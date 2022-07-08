@@ -1,7 +1,7 @@
 package com.example.android.vocalforlocal.Model;
 
 public class Products {
-    private String pname, description, price, image, category, pid, date, time;
+    private String pname, description, price, image, category, pid, productStats, date, time;
 
     public Products()
     {
@@ -56,6 +56,14 @@ public class Products {
         this.pid = pid;
     }
 
+    public String getProductStats() {
+        return productStats;
+    }
+
+    public void setProductStats(String productStats) {
+        this.productStats = productStats;
+    }
+
     public String getDate() {
         return date;
     }
@@ -72,13 +80,14 @@ public class Products {
         this.time = time;
     }
 
-    public Products(String pname, String description, String price, String image, String category, String pid, String date, String time) {
+    public Products(String pname, String description, String price, String image, String category, String pid, String productStats, String date, String time) {
         this.pname = pname;
         this.description = description;
         this.price = price;
         this.image = image;
         this.category = category;
         this.pid = pid;
+        this.productStats = productStats;
         this.date = date;
         this.time = time;
     }

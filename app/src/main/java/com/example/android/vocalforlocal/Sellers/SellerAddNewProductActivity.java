@@ -161,7 +161,7 @@ public class SellerAddNewProductActivity extends AppCompatActivity {
     private void StoreProductInformation() {
 
         loadingBar.setTitle("Add New Product");
-        loadingBar.setMessage("Dear Admin, Please wait while we are adding the product");
+        loadingBar.setMessage("Dear Seller, Please wait while we are adding the product");
         loadingBar.setCanceledOnTouchOutside(false);
         loadingBar.show();
 
@@ -223,6 +223,7 @@ public class SellerAddNewProductActivity extends AppCompatActivity {
     private void SaveProductInfoToDatabase() {
         HashMap<String, Object> productMap = new HashMap<>();
         productMap.put("pid", productRandomKey);
+        productMap.put("pname",Pname);
         productMap.put("date", saveCurrentDate);
         productMap.put("time", saveCurrentTime);
         productMap.put("description", Description);
