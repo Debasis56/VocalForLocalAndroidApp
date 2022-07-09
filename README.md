@@ -3,9 +3,10 @@
 
 
 ## Project title - Vocal For Local
-A complete e-commerce platform built for helping the people from rural areas and outskirts of city to send their local goods and promote them. Admins can login and register their goods
-and put all the relevant details about their product whereas users can log into the marketplace and buy their goods with a hassle-free experience. This project is currently in working phase and
-have not been completed......New features will be updated soon....
+A complete e-commerce platform built for helping the people from rural areas and outskirts of city to send their local goods and promote them. This app is basically an e-commerce marketplace made for 3 types of users:
+* Buyers -  to view the products, add to cart and Order them seamlessly.
+* Admin - to approve each product posted by seller and to update the status of Buyers' orders
+* Seller - Each seller can register and open their store online where they can list their products for the Buyers.
 <br/>
 
 
@@ -43,7 +44,9 @@ have not been completed......New features will be updated soon....
 
 ### * `Android SDK`
 ### * `JAVA`
-### * `Firebase`
+### * `Firebase Realtime Database`
+### * `Firebase Authentication`
+### * `Firebase Storage`
 ### * `Picasso`
 ### * `Rey Material Library`
 ### * `Paper`
@@ -51,11 +54,15 @@ have not been completed......New features will be updated soon....
 
 ## Features
 
---Seperate activities for admin and users.
+--Seperate activities for admin, users and sellers
 <br/>
---Admins can add new products easily and it us stored in database.
+--Sellers can add new products easily and it is stored in database.
 <br/>
---Users can easily access the the list of items in their home screen.
+--Admins can see the list of products added by each seller and approve each product if its genuine for the buyers to view and buy.
+<br/>
+--Users can easily access the the list of items in their home screen that are approved and genuine .
+<br/>
+--Users can add products they want to the cart and check the status of product when they want.
 <br/>
 --Picasso is used for displaying the image on the screen.
 <br/>
